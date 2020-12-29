@@ -1,0 +1,23 @@
+.content {
+    color: #d3d2d4;
+    margin: 20px 20%;
+}
+
+#swe-tagline {
+    font-size: 2rem;
+    margin-bottom: 0;
+}
+
+#traits-tagline {
+    font-size: 1.5rem;
+    color: #9034c7;
+    margin-top: 2px;
+}
+
+.resume-section-title {
+    text-align: left;
+}
+
+.no-margin-b {
+    margin-bottom: 0;
+}
