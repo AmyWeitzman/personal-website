@@ -1,6 +1,7 @@
-.content {
+.resume-content {
     color: #d3d2d4;
     margin: 20px 20%;
+    text-align: center;
 }
 
 #swe-tagline {
@@ -20,4 +21,24 @@
 
 .no-margin-b {
     margin-bottom: 0;
+}
+
+#skills-table {
+    margin-right: 0;
+    width: 100%;
+}
+
+#download-btn {
+    color: #d3d2d4;
+    font-size: 30px;
+  
+}
+
+#download-btn:hover {
+    color: #9034c7;
+}
+
+#download-icon {
+    margin-top: 30px;
+    margin-bottom: 15px;    
 }

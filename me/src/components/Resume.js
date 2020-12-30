@@ -1,8 +1,11 @@
 import React from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faDownload } from '@fortawesome/free-solid-svg-icons';
 import '../App.css';
 import './Resume.css';
 import Education from "./Education";
 import Experience from "./Experience";
+import SkillLevel from "./SkillLevel";
 
 import uci_logo from '../images/uci_logo.png';
 import propheto_logo from '../images/propheto_logo.png';
@@ -62,9 +65,60 @@ const experienceInfo = [
     }
 ];
 
+const skillLevels = [
+    {
+        skill1: "Python",
+        level1: 5,
+        skill2: 'Java',
+        level2: 5
+    },
+    {
+        skill1: 'HTML',
+        level1: 5,
+        skill2: 'CSS',
+        level2: 5
+    },
+    {
+        skill1: 'JavaScript',
+        level1: 4,
+        skill2: 'Vue.js',
+        level2: 4
+    },
+    {
+        skill1: 'React.js',
+        level1: 4,
+        skill2: 'Git',
+        level2: 4
+    },
+    {
+        skill1: 'SQL',
+        level1: 4,
+        skill2: 'Node.js',
+        level2: 3
+    },
+    {
+        skill1: 'Firebase',
+        level1: 3,
+        skill2: 'PostgreSQL',
+        level2: 3
+    },
+    {
+        skill1: 'C++',
+        level1: 3,
+        skill2: 'Figma',
+        level2: 3
+    },
+    {
+        skill1: 'MongoDB',
+        level1: 1,
+        skill2: 'GraphQL',
+        level2: 1
+    }
+];
+
 function Resume() {
   return (
-    <div className="content">
+    <div className="resume-content">
         <h3 id="swe-tagline">Aspiring Software Engineer</h3>
         <h5 id="traits-tagline">Passionate | Creative | Curious</h5>
         <h2 className="resume-section-title">EDUCATION</h2>
@@ -76,6 +130,24 @@ function Resume() {
         {
             experienceInfo.map((el, idx) => <Experience key={idx} details={el} />)
         }
+        <h2 className="resume-section-title no-margin-b">SKILLS</h2>
+        <table id="skills-table">
+            <tbody>
+                {
+                    skillLevels.map((el, idx) => {
+                        return (
+                            <tr>
+                                <td><SkillLevel key={idx+'-1'} skill={el.skill1} level={el.level1} /></td>
+                                <td><SkillLevel key={idx+'-2'} skill={el.skill2} level={el.level2} /></td>
+                            </tr>
+                        );
+                    })
+                }
+            </tbody>
+        </table>
+        <a id="download-btn" href="https://github.com/AmyWeitzman/resume/raw/master/Weitzman_Amy.pdf" download>
+            <FontAwesomeIcon id="download-icon" icon={faDownload} />
+        </a>
     </div>
   );
 }

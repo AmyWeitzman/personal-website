@@ -1,24 +1,44 @@
-.content {
-    margin-top: 20px;
-    text-align: center;
-    margin-bottom: 20px;
+.home-content {
+    margin: 20px 20%;
+    text-align: left;
+}
+
+#terminal {
+    background-color: black;
+    border-radius: 10px;
+    padding-bottom: 15px;
+    box-shadow: 0px 1px 10px -1px #d3d2d4;
 }
 
 #hello-world {
     color: #9034c7;
-    font-size: 2.5rem;
+    font-size: 2rem;
+    margin-top: 0;
     margin-bottom: 0;
+    background-color: black;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom: 1px solid #d3d2d483;
+    padding: 5px;
+    padding-left: 15px;
 }
 
-.terminal {
+.terminal-text {
     color: #39ff14;
     font-size: 1.5rem;
     font-family: monospace;
+    margin-left: 20px;
 }
 
 #terminal-response {
     white-space: pre-wrap;
-    text-align: left;
-    margin-left: 42%;
-    /* margin: auto; */
 }
+
+.hidden {
+    color: transparent;
+}
+
+.visible {
+    color: #39ff14;
+}
+

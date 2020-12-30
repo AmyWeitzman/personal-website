@@ -10,6 +10,38 @@ body, html {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+.rotate-y:hover {
+    /* color: #9034c7; */
+    transition        : 1.5s ease all;
+	-moz-transition   : 1.5s ease all;
+    -webkit-transition: 1.5s ease all;
+    transform               : rotateY(360deg);
+	-moz-transform          : rotateY(360deg);
+	-webkit-transform       : rotateY(360deg);
+	transform-origin        : center;
+	-moz-transform-origin   : center;
+	-webkit-transform-origin: center;
+}
+
+.github-icon {
+    color: #d3d2d4;
+    margin-left: 15px;
+    font-size: 50px;
+}
+
+.github-icon-link {
+    color: #d3d2d4 !important;
+}
+
+.github-icon-light {
+    text-shadow: none;
+    border-radius: 80px;
+}
+
+#github-icon:hover {
+    color: #9034c7;
+}
+
 .dark-fg-light-red {
     color: rgba(192, 11, 11, 0.8);
 }

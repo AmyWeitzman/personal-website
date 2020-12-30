@@ -1,0 +1,69 @@
+.project {
+    background-color:  black;
+    border-radius: 25px;
+    padding: 25px;
+    transition: all .3s ease-in-out;
+    margin-left: 8%;
+    margin-right: 8%;
+    box-shadow: 0px 1px 10px -1px #d3d2d4;
+}
+
+.project:hover {
+    transform: scale(1.02);
+}
+
+.project-name {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #d3d2d4;
+}
+
+.project-dates {
+    font-size: 2rem;
+    font-style: italic;
+    color: #d3d2d4;
+    font-weight: normal;
+    float: right;
+}
+
+.project-tech {
+    font-weight: normal;
+    font-size: 2rem;
+    color: #9034c7;
+    font-style: italic;
+    margin: 0;
+}
+
+.project-text {
+    font-weight: normal;
+    font-size: 30px;
+    color: #d3d2d4;
+}
+
+.button-style {
+    text-align: center;
+}
+
+.show-button {
+    background-color: black;
+    color: #9034c7;
+    font-size: 20px;
+    font-weight: bold;
+    border: none;
+    outline: none;
+}
+
+.show-button:hover {
+    text-decoration: underline;
+}
+
+.header {
+    margin: 0;
+}
+
+.skill-list {
+    display: flex;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+

@@ -4,24 +4,24 @@ import './Experience.css';
 
 import Badge from "./Badge";
 
-const skill_colors = {
-    'Python': 'dark-purple',
-    'Java': 'dark-orange',
-    'C++': 'dark-yellow',
-    'SQL': 'dark-green',
-    'HTML': 'light-orange',
-    'CSS': 'light-yellow',
-    'JavaScript': 'dark-blue',
-    'Vue.js': 'light-green',
-    'React.js': 'light-red',
-    'Node.js': 'dark-red',
-    'Git': 'light-turquoise',
-    'Agile': 'light-gray',
-    'Figma': 'light-blue',
-    'Linux': 'dark-gray',
-    'Firebase': 'light-pink',
-    'PostgreSQL': 'light-purple'
-};
+// const skill_colors = {
+//     'Python': 'dark-purple',
+//     'Java': 'dark-orange',
+//     'C++': 'dark-yellow',
+//     'SQL': 'dark-green',
+//     'HTML': 'light-orange',
+//     'CSS': 'light-yellow',
+//     'JavaScript': 'dark-blue',
+//     'Vue.js': 'light-green',
+//     'React.js': 'light-red',
+//     'Node.js': 'dark-red',
+//     'Git': 'light-turquoise',
+//     'Agile': 'light-gray',
+//     'Figma': 'light-blue',
+//     'Linux': 'dark-gray',
+//     'Firebase': 'light-pink',
+//     'PostgreSQL': 'light-purple'
+// };
 
 function Experience(props) {
   return (

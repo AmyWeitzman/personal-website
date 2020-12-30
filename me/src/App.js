@@ -4,6 +4,16 @@ import './App.css';
 import NavBar from "./components/NavBar";
 import Home from "./components/Home";
 import Resume from "./components/Resume";
+import Projects from "./components/Projects";
+import Blog from "./components/Blog";
+import Blog1 from "./blogs/Blog1";
+import Blog2 from "./blogs/Blog2";
+import Blog3 from "./blogs/Blog3";
+import Blog4 from "./blogs/Blog4";
+import Blog5 from "./blogs/Blog5";
+import Blog6 from "./blogs/Blog6";
+import Blog7 from "./blogs/Blog7";
+import Blog8 from "./blogs/Blog8";
 import Error from "./components/Error";
 
 function App() {
@@ -18,17 +28,16 @@ function App() {
                         <Route exact path='/home' component={Home}></Route>
                         <Route exact path='/me' component={Home}></Route>
                         <Route exact path='/resume' component={Resume}></Route>
-                        {/* <Route exact path='/projects' component={Projects}></Route>
-                        <Route exact path='/hobbies' component={Hobbies}></Route>
-                        <Route exact path='/facts' component={Facts}></Route>
-                        <Route exact path='/contact' component={Contact}></Route>
-                        <Route exact path='/quotes' component={Quotes}></Route>
+                        <Route exact path='/projects' component={Projects}></Route>
                         <Route exact path='/blog' component={Blog}></Route>
                         <Route exact path='/blog/structure-and-applications-of-body-area-networks' component={Blog1}></Route>
                         <Route exact path='/blog/impact-of-computer-science-on-next-generation-education' component={Blog2}></Route>
                         <Route exact path='/blog/it-just-takes-a-ripple-to-start-a-wave-of-change' component={Blog3}></Route>
+                        <Route exact path='/blog/my-legacy-at-uci' component={Blog4}></Route>
+                        <Route exact path='/blog/breaking-tackles' component={Blog5}></Route>
+                        <Route exact path='/blog/cs-inspiration-and-goals' component={Blog6}></Route>
                         <Route exact path='/blog/if-i-had-infinite-time-and-money' component={Blog7}></Route>
-                        <Route exact path='/blog/unique-interview-questions' component={Blog8}></Route> */}
+                        <Route exact path='/blog/unique-interview-questions' component={Blog8}></Route>
                         <Route component={Error}></Route>
                     </Switch>
                 </div>
