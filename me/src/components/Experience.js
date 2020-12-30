@@ -32,7 +32,9 @@ function Experience(props) {
                 <p className="job-title experience-info-item">{props.details.jobTitle}</p>
                 <p className="years experience-info-item">{props.details.years}</p>
             </div>
-            <p className="company-info experience-info-item">{props.details.companyName}, <span className="location">{props.details.location}</span></p>
+            <p className="company-info experience-info-item">{props.details.companyName}
+                { props.details.location && <span className="location">, {props.details.location}</span>}
+            </p>
             <div className="skill-list experience-info-item">
                 {
                     props.details.skills.map((skill, idx) => 

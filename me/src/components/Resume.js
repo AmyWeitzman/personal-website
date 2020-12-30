@@ -11,6 +11,9 @@ import uci_logo from '../images/uci_logo.png';
 import propheto_logo from '../images/propheto_logo.png';
 import dia_logo from '../images/dia_logo.png';
 import siemens_logo from '../images/siemens_logo.png';
+import awt from '../images/awt.png';
+import smart from '../images/smart.png';
+import chp from '../images/chp.PNG';
 
 const schoolInfo = [
     {
@@ -116,6 +119,36 @@ const skillLevels = [
     }
 ];
 
+const awards = [
+    {
+        jobTitle: "Advancing Women in Technology Scholar",
+        companyName: "Advancing Women in Technology",
+        location: "",
+        years: "2020",
+        skills: [],
+        tasks: [],
+        logo: awt
+    },
+    {
+        jobTitle: "SMART Scholarship",
+        companyName: "Department of Defense",
+        location: "",
+        years: "2018—Present",
+        skills: [],
+        tasks: [],
+        logo: smart
+    },
+    {
+        jobTitle: "Campuswide Honors Collegium",
+        companyName: "UC Irvine",
+        location: "",
+        years: "2017—Present",
+        skills: [],
+        tasks: [],
+        logo: chp
+    }
+];
+
 function Resume() {
   return (
     <div className="resume-content">
@@ -145,6 +178,14 @@ function Resume() {
                 }
             </tbody>
         </table>
+        <h2 className="resume-section-title no-margin-b">AWARDS</h2>
+        {
+            awards.map((el, idx) => 
+                <div style={{marginBottom: 50}}>
+                    <Experience key={idx} details={el} />
+                </div>    
+            )
+        }
         <a id="download-btn" href="https://github.com/AmyWeitzman/resume/raw/master/Weitzman_Amy.pdf" download>
             <FontAwesomeIcon id="download-icon" icon={faDownload} />
         </a>
