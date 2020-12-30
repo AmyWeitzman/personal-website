@@ -1,2 +1,2 @@
-# amyweitzman.github.io
+# Personal Website
 Website about me, including my projects, activites, blog, and resume.
