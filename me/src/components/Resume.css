@@ -1,5 +1,5 @@
 .resume-content {
-    color: #d3d2d4;
+    color: var(--theme-gray);
     margin: 20px 20%;
     text-align: center;
 }
@@ -11,7 +11,7 @@
 
 #traits-tagline {
     font-size: 1.5rem;
-    color: #9034c7;
+    color: var(--theme-purple);
     margin-top: 2px;
     margin-bottom: 10px;
 }
@@ -30,13 +30,13 @@
 }
 
 #download-btn {
-    color: #d3d2d4;
+    color: var(--theme-gray);
     font-size: 30px;
   
 }
 
 #download-btn:hover {
-    color: #9034c7;
+    color: var(--theme-purple);
 }
 
 #download-icon {
@@ -49,7 +49,7 @@
 }
 
 #github-profile-icon {
-    background-color: #d3d2d4;
+    background-color: var(--theme-gray);
     border-radius: 20px;
     margin-left: 15px;
 }

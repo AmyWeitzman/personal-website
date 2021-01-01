@@ -17,6 +17,7 @@ import { name as nameRTCJB, longText as longRTCJB, shortText as shortRTCJB, date
 import { name as nameIvy, longText as longIvy, shortText as shortIvy, dates as datesIvy, techUsed as techIvy, link as linkIvy} from "../projects/Ivy";
 import { name as nameComSer, longText as longComSer, shortText as shortComSer, dates as datesComSer, techUsed as techComSer, link as linkComSer} from "../projects/CommunityService";
 
+// project info to display on page
 var projectInfo = {
     "MurderMysteries": {
         name: nameMM,
@@ -116,7 +117,7 @@ function toggleShow(name, textLong, textShort) {
   function Project(props) {
     var projectDetails = projectInfo[props.name];
     return (
-      <div className="project" onClick={(e) => {
+      <div className="project box-shadow" onClick={(e) => {
             toggleShow(props.name, projectDetails.longText, projectDetails.shortText)
         }}>
         <br></br>

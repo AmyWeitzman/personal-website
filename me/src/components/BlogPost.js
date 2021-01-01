@@ -9,10 +9,12 @@ function formatLink(title) {
 
 function BlogPost(props) {
     return (
-        <div className="blog-post">
-        <br></br>
-        <Link to={'/blog/'+formatLink(props.title)} style={{textDecoration: 'none'}}><h2 className="post-title">{props.title}</h2></Link>
-        <p className="post-text">{props.text}</p>
+        <div className="blog-post box-shadow">
+            <br></br>
+            <Link to={'/blog/' + formatLink(props.title)} style={{textDecoration: 'none'}}>
+                <h2 className="post-title">{props.title}</h2>
+            </Link>
+            <p className="post-text">{props.text}</p>
         </div>
     );
 }

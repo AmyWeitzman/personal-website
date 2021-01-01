@@ -4,14 +4,7 @@ import '../App.css';
 import './SkillLevel.css';
 
 function SkillLevel(props) {
-    // get ranking and display correct number of stars
-    // const stars = [];
-    // for(let i = 0; i < props.details.level; i++) {
-    //     items.push(< key={index}>{value}</li>)
-    // }
-
     return (
-        // className={`badge ${props.color} ${props.bg} border-${props.color}`}
         <div className="skill-content">
             <p className="skill-name">{props.skill}</p>
             <StarRatingComponent 

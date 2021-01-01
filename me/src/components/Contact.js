@@ -1,6 +1,6 @@
 import React from 'react';
 import emailjs from 'emailjs-com';
-import { USER_ID, SERVICE_ID, TEMPLATE_ID } from "../emailJS";
+import { USER_ID, SERVICE_ID, TEMPLATE_ID } from "../emailJS";  // keep private so import from separate file
 import '../App.css';
 import './Contact.css';
 
@@ -13,7 +13,8 @@ function Contact(props) {
       from_name: e.target.from_name.value,
       from_email: e.target.from_email.value,
       message: e.target.message.value
-    };  
+    }; 
+
     emailjs.send(SERVICE_ID, TEMPLATE_ID, templateParams, USER_ID)
       .then((result) => {
           console.log(result.text);

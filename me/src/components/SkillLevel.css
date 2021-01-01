@@ -6,7 +6,7 @@
 }
 
 .skill-name {
-    color: #d3d2d4;
+    color: var(--theme-gray);
     width: 25%;
     margin-right: 30px;
     margin-top: 10px;

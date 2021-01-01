@@ -2,8 +2,8 @@ import React, { useState, useEffect } from 'react';
 import '../App.css';
 import './Home.css';
 
-const MIN_DELAY = 20;  // min delay (ms) for auto-typing
-const MAX_DELAY = 250;  // max delay (ms) for auto-typing
+const MIN_DELAY = 20;    // min delay (ms) for auto-typing
+const MAX_DELAY = 250;   // max delay (ms) for auto-typing
 
 function Home() {
     const terminalCommand = "curl https://about-me";
@@ -40,7 +40,7 @@ function Home() {
 
     return (
         <div className="home-content">
-            <div id="terminal">
+            <div id="terminal" className="box-shadow">
                 <h3 id="hello-world" classsName="terminal-text">&#62;_</h3>
                 <p id="terminal-command" className="terminal-text"></p>
                 <p id="terminal-response" className="terminal-text hidden">

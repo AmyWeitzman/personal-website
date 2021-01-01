@@ -10,6 +10,7 @@ import scholarship_track from '../images/scholarship_track.png';
 import uci_research from '../images/uci_research.png';
 import att from '../images/att.png';
 
+// list of activites and relevant info to add to page
 const activityInfo = [
     {
         jobTitle: "Mentor",
@@ -93,9 +94,8 @@ function Activities() {
     <div className="activities-content">
         {
             activityInfo.map((el, idx) => 
-                <div className="activity">
+                <div className="activity box-shadow">
                     <Experience key={idx} details={el} />
-                    {/* <hr className="divider-line"></hr> */}
                 </div>
             )
         }
