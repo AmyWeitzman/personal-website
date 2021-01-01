@@ -13,6 +13,7 @@
     font-size: 1.5rem;
     color: #9034c7;
     margin-top: 2px;
+    margin-bottom: 10px;
 }
 
 .resume-section-title {
@@ -41,4 +42,22 @@
 #download-icon {
     margin-top: 30px;
     margin-bottom: 15px;    
+}
+
+#linkedin-icon {
+    margin-right: 15px;
+}
+
+#github-profile-icon {
+    background-color: #d3d2d4;
+    border-radius: 20px;
+    margin-left: 15px;
+}
+
+.hover-grow {
+    transition: transform .2s; 
+}
+
+.hover-grow:hover {
+    transform: scale(1.1);
 }

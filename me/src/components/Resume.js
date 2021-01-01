@@ -14,6 +14,8 @@ import siemens_logo from '../images/siemens_logo.png';
 import awt from '../images/awt.png';
 import smart from '../images/smart.png';
 import chp from '../images/chp.PNG';
+import linkedin from '../images/linkedin.png';
+import github from '../images/github.png';
 
 const schoolInfo = [
     {
@@ -154,6 +156,12 @@ function Resume() {
     <div className="resume-content">
         <h3 id="swe-tagline">Aspiring Software Engineer</h3>
         <h5 id="traits-tagline">Passionate | Creative | Curious</h5>
+        <a href="https://www.linkedin.com/in/amy-weitzman/" target="_blank">
+            <img src={linkedin} alt={"LinkedIn"} width="35" id="linkedin-icon" className="hover-grow"></img>
+        </a>
+        <a href="https://github.com/AmyWeitzman" target="_blank">
+            <img src={github} alt={"GitHub"} width="35" id="github-profile-icon" className="hover-grow"></img>
+        </a>
         <h2 className="resume-section-title">EDUCATION</h2>
         {
             schoolInfo.map((el, idx) => <Education key={idx} details={el} />)
